@@ -5,6 +5,10 @@ pipeline {
     dockerImage = ''
   }
   agent any
+  tools {
+  jdk 'jdk-22'
+  maven 'MAVEN_HOME'
+  }
   stages {
     stage('Compile') {
       steps {

@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy the application's JAR file into the container
 # Replace 'your-application.jar' with the actual name of your built JAR file
-COPY target/demo-0.0.1-SNAPSHOT.jar app.jar
+COPY target/camunda-8-twitter-review-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port your Spring Boot application listens on (default is 8080)
 EXPOSE 8080

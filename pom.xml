@@ -60,10 +60,10 @@
     </dependency>
     <dependency>
       <groupId>org.camunda.community.process_test_coverage</groupId>
-      <artifactId>camunda-process-test-coverage-junit5-platform-8</artifactId> 
+      <artifactId>camunda-process-test-coverage-junit5-platform-8</artifactId>
       <version>${camunda-process-test-coverage.version}</version>
       <scope>test</scope>
-    </dependency>    
+    </dependency>
 
     <!-- Required to offer a REST API via Spring Webflux (of course you could use any other framework too) -->
     <dependency>
@@ -125,6 +125,13 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <version>${version.spring-boot}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

@@ -1,0 +1,22 @@
+camunda:
+  client:
+    mode: self-managed
+    auth:
+      client-id: zeebe
+      client-secret: nr4kGdMFy7
+      issuer: https://local.distro.ultrawombat.com/auth/realms/camunda-platform/protocol/openid-connect/token
+    zeebe:
+      enabled: true
+      rest-address: https://zeeberest.local.distro.ultrawombat.com
+      audience: zeebe-api
+      prefer-rest-over-grpc: false
+      grpc-address: https://zeebe.local.distro.ultrawombat.com
+#      defaults:
+#        use-case-retries: 5
+#        retry-back-off: 3s
+#        execution-threads: 1
+#        max-jobs-active: 32
+#        timeout: 10s
+#        request-timeout: 10s
+#        enabled: true
+#        stream-enabled: false

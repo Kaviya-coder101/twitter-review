@@ -1,13 +1,13 @@
 pipeline {
-  environment {
-    registry = "demo520/my-twitter-app"
-    registryCredential = 'docker-hub-credentials'
-    dockerImage = ''
-  }
   agent any
   tools {
   jdk 'jdk-22'
   maven 'MAVEN_HOME'
+  }
+  environment {
+    registry = "demo520/my-twitter-app"
+    registryCredential = 'docker-hub-credentials'
+    dockerImage = ''
   }
   stages {
     stage('Compile') {

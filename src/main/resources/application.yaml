@@ -4,13 +4,10 @@ camunda:
     auth:
       client-id: zeebe
       client-secret: nr4kGdMFy7
-      token-url: https://local.distro.ultrawombat.com/auth/realms/camunda-platform/protocol/openid-connect/token
+      token-url: http://camunda-keycloak:80/auth/realms/camunda-platform/protocol/openid-connect/token
     zeebe:
       enabled: true
-      rest-address: https://zeeberest.local.distro.ultrawombat.com
-      audience: zeebe-api
-      prefer-rest-over-grpc: true
-      grpc-address: https://zeebe.local.distro.ultrawombat.com
+      grpc-address: http://camunda-zeebe-gateway:26500
 #      defaults:
 #        use-case-retries: 5
 #        retry-back-off: 3s

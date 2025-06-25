@@ -19,14 +19,6 @@ spec:
           image: demo520/my-twitter-app:latest
           ports:
             - containerPort: 8081
-#          volumeMounts:
-#            - name: zeebe-ca-volume
-#              mountPath: /app/certs
-#              readOnly: true
-#      volumes:
-#        - name: zeebe-ca-volume
-#          secret:
-#            secretName: camunda-platform
 ---
 apiVersion: v1
 kind: Service

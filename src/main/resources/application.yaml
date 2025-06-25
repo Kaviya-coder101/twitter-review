@@ -9,7 +9,7 @@ camunda:
       enabled: true
       rest-address: https://zeeberest.local.distro.ultrawombat.com
       audience: zeebe-api
-      prefer-rest-over-grpc: false
+      prefer-rest-over-grpc: true
       grpc-address: https://zeebe.local.distro.ultrawombat.com
 #      defaults:
 #        use-case-retries: 5

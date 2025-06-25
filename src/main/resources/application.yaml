@@ -7,8 +7,8 @@ camunda:
       token-url: http://camunda-keycloak:80/auth/realms/camunda-platform/protocol/openid-connect/token
     zeebe:
       enabled: true
-      grpc-address: https://camunda-zeebe-gateway.default.svc.cluster.local:26500
-      ca-certificate-path: /app/certs/tls.crt
+      grpc-address: http://camunda-zeebe-gateway.default.svc.cluster.local:26500
+#      ca-certificate-path: /app/certs/tls.crt
 #      defaults:
 #        use-case-retries: 5
 #        retry-back-off: 3s

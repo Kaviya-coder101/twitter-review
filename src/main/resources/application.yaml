@@ -3,7 +3,7 @@ camunda:
     mode: self-managed
     auth:
       client-id: zeebe
-      client-secret: nr4kGdMFy7
+      client-secret: MaNIS64wJp
       token-url: http://camunda-keycloak:80/auth/realms/camunda-platform/protocol/openid-connect/token
     zeebe:
       enabled: true
